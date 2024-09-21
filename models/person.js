@@ -9,7 +9,9 @@ const personSchema = new mongoose.Schema({
     phone:{type:Number},
     work:{type:String, required:true},
     address:{type:String},
-    salary:{type:Number}
+    salary:{type:Number},
+    username:{type:String,required:true,unique:true},
+    password:{type:String,required:true,unique:true}
 
 })
 
